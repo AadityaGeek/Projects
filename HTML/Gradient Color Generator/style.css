@@ -1,0 +1,193 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #8A6CFF;
+}
+.wrapper {
+  width: min(450px, 95%);
+  margin: 1rem 0;
+  padding: clamp(15px, 3vw, 25px);
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+}
+.wrapper .gradient-box {
+  height: 220px;
+  width: 100%;
+  border-radius: 7px;
+  background: linear-gradient(to left top, #5665E9, #A271F8);
+}
+.wrapper .row {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.options p {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.row :where(.column, button) {
+  width: calc(100% / 2 - 12px);
+}
+.options .select-box {
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid #aaa;
+}
+.select-box select {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.12rem;
+  background: none;
+}
+.options .palette {
+  margin-left: 60px;
+}
+.palette input {
+  height: 41px;
+  width: calc(100% / 2 - 20px);
+}
+.palette input:last-child {
+  margin-left: 6px;
+}
+.wrapper textarea {
+  width: 100%;
+  color: #333;
+  font-size: 1.05rem;
+  resize: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.buttons button {
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin: 0 0 -15px;
+  font-size: 1.09rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+.buttons .refresh {
+  background: #6C757D;
+}
+.buttons .refresh:hover {
+  background: #5f666d;
+}
+.buttons .copy {
+  background: #8A6CFF;
+}
+.buttons .copy:hover {
+  background: #704dff;
+}
+
+.gh-name {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 432px) {
+  .wrapper {
+    padding: 25px 20px;
+  }
+  .row :where(.column, button) {
+    width: calc(100% / 2 - 8px);
+  }
+  .options .select-box {
+    padding: 8px 15px;
+  }
+  .options .palette  {
+    margin-left: 40px;
+  }
+  .options .colors {
+    display: flex;
+    justify-content: space-between;
+  }
+  .palette input {
+    width: calc(100% / 2 - 5px);
+  }
+  .palette input:last-child {
+    margin-left: 0;
+  }
+  .site-header h1 {
+    font-size: 2rem;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-links a {
+    margin: 0;
+  }
+}
+.site-header {
+  text-align: center;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.site-header h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.site-header p {
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  opacity: 0.9;
+}
+.site-footer {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: #fff;
+  text-align: center;
+}
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-links {
+  margin-top: 1rem;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.social-links {
+  margin-top: 0.5rem;
+}
+.social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+.social-links a:hover {
+  opacity: 0.8;
+}
